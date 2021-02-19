@@ -17,7 +17,7 @@ jobs:
     steps:
       # ...
       - name: "Configure"
-        run: /configure
+        run: ./configure
        
       - name: "Make"
         run: make
