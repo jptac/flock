@@ -21,7 +21,7 @@ jobs:
         run: pwd
         
       - name: "Contents"
-        run: ls -lah       
+        run: ls -lah ./..      
       
       - name: "Configure"
         run: ./configure
