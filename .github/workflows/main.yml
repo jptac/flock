@@ -16,8 +16,12 @@ jobs:
 
     steps:
       # ...
-      - name: "Auto Make"
-        run: ./autogen.sh
+      
+      - name: "Lost"
+        run: pwd
+        
+      - name: "Contents"
+        run: ls -lah       
       
       - name: "Configure"
         run: ./configure
@@ -33,3 +37,4 @@ jobs:
           files: |
             LICENSE.txt
             *
+
