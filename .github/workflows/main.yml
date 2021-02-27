@@ -20,8 +20,8 @@ jobs:
         uses: actions/checkout@v2
 
       
-      - name: "Lost"
-        run: pwd
+      - name: "Auto Conf"
+        run: autoreconf --install --warnings=all
         
       - name: "Contents"
         run: ls -lah      
