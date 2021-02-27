@@ -19,6 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Prep workspace
+        run: brew install automake
       
       - name: "Auto Conf"
         run: autoreconf --install --warnings=all
