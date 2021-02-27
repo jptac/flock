@@ -16,6 +16,11 @@ jobs:
 
     steps:
       # ...
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: main
+
       
       - name: "Lost"
         run: pwd
@@ -29,7 +34,6 @@ jobs:
       - name: "Make"
         run: make
         
-      - uses: actions/checkout@v2   
       
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
