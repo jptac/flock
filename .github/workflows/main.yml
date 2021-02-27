@@ -20,7 +20,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Prep workspace
-        run: brew install automake
+        run: |
+             brew install automake
+             gem install ronn
       
       - name: "Auto Conf"
         run: autoreconf --install --warnings=all
