@@ -21,7 +21,7 @@ jobs:
         run: pwd
         
       - name: "Contents"
-        run: ls -lah ./..      
+        run: ls -lah      
       
       - name: "Configure"
         run: ./configure
@@ -29,6 +29,8 @@ jobs:
       - name: "Make"
         run: make
         
+      - uses: actions/checkout@v2   
+      
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
